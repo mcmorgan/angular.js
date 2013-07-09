@@ -63,9 +63,9 @@ module.exports = function(grunt) {
             return [
               function(req, resp, next) {
                 // cache get requests to speed up tests on travis
-                if (req.method === 'GET') {
-                  resp.setHeader('Cache-control', 'public, max-age=3600');
-                }
+                // if (req.method === 'GET') {
+                //   resp.setHeader('Cache-control', 'public, max-age=3600');
+                // }
 
                 next();
               },
