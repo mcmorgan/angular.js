@@ -25,7 +25,6 @@ unzip $CONNECT_DOWNLOAD
 rm $CONNECT_DOWNLOAD
 
 
-
 ARGS=""
 
 # Set tunnel-id only on Travis, to make local testing easier.
