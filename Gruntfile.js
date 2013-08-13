@@ -32,10 +32,10 @@ module.exports = function(grunt) {
         },
         tasks: [
           util.parallelTask('test:docgen'),
-          util.parallelTask('test:docs'),
-          util.parallelTask('test:modules'),
-          util.parallelTask('test:jquery'),
-          util.parallelTask('test:jqlite'),
+          util.parallelTask('tests:docs'),
+          util.parallelTask('tests:modules'),
+          util.parallelTask('tests:jquery'),
+          util.parallelTask('tests:jqlite'),
           util.parallelTask('test:e2e')
         ]
       }
