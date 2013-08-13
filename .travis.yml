@@ -13,4 +13,5 @@ script:
   - npm install -g grunt-cli
   - grunt ci-checks package
   - ./lib/sauce/sauce_connect_block.sh
-  - grunt parallel:travis --reporters dots --browsers SL_Chrome
+  - grunt travis-sync --reporters dots --browsers SL_Chrome
+  # - grunt parallel:travis --reporters dots --browsers SL_Chrome

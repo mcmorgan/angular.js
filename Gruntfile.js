@@ -245,4 +245,5 @@ module.exports = function(grunt) {
   grunt.registerTask('package', ['bower','clean', 'buildall', 'minall', 'collect-errors', 'docs', 'copy', 'write', 'compress']);
   grunt.registerTask('ci-checks', ['ddescribe-iit', 'merge-conflict']);
   grunt.registerTask('default', ['package']);
+  grunt.registerTask('travis-sync', ['test:docgen','tests:docs','tests:modules','tests:jquery','tests:jqlite','test:e2e']);
 };
